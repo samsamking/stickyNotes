@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	
 	function clickVauleNone(className){
 		document.querySelector(className).onclick =function(){
-		return this.value="";
+			return this.value="";
 		};
 	};
 	
@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded",function(){
 	document.querySelector(".clickButton").onclick =function(){
 		var box=document.createElement("div");
 		box.className="box";
-		var backgroundColor=document.querySelector(".inputColor").value.toString();
-		var message=document.querySelector(".inputMessage").value.toString();
+		var backgroundColor=document.querySelector(".inputColor").value;
+		var message=document.querySelector(".inputMessage").value;
 		box.style.backgroundColor= backgroundColor;
 		counter++;
 		box.innerHTML=counter +" "+ message;
